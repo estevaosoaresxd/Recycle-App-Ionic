@@ -1,0 +1,32 @@
+<ion-header>
+  <ion-toolbar>
+    <ion-buttons slot="start">
+      <ion-back-button></ion-back-button>
+    </ion-buttons>
+    <ion-title>Pickup Call</ion-title>
+  </ion-toolbar>
+</ion-header>
+
+<ion-content>
+  <img src="https://img.olhardigital.com.br/uploads/acervo_imagens/2018/12/20181218065336.jpg" alt="">
+<ion-card>
+  <ion-card-content>
+
+  <p>Adress: Street 4</p>
+  <p>Complement: Aleatorio</p>
+  <p>Neighborhood: Aleatorio</p>
+  <p>ZipCorde: 123456789</p>
+  <p>City Name: City of 3 S</p>
+</ion-card-content>
+</ion-card>
+<ion-list>
+  <ion-item lines="inset">
+    <ion-label position="floating">Notes</ion-label>
+    <ion-textarea></ion-textarea>
+  </ion-item>
+
+  <ion-button (click)="onClick()" expand="block"  color="dark">
+    Create pickup call
+  </ion-button>
+</ion-list>
+</ion-content>

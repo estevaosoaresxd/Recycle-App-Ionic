@@ -1,0 +1,23 @@
+import { Component, OnInit, Input } from '@angular/core';
+
+@Component({
+  selector: 'app-pickup-call-card',
+  templateUrl: './pickup-call-card.component.html',
+  styleUrls: ['./pickup-call-card.component.scss'],
+})
+export class PickupCallCardComponent implements OnInit {
+
+  @Input() hasHeader: boolean;
+  @Input() hasFooter: boolean;
+  // @input = to input a value in page
+
+  @Input() status: string;
+  @Input() updateAt: string;
+  @Input() createAt: string;
+  @Input() notes: string;
+  @Input() value: string;
+  constructor() { }
+
+  ngOnInit() {}
+
+}
